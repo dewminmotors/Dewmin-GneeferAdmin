@@ -28,12 +28,12 @@ export class user{
 })
 export class ApiCallsService {
 
-  itemEndpoint = 'https://gneeferserver.herokuapp.com/api/item/';
-  stocksEndpoint = 'https://gneeferserver.herokuapp.com/api/stock/';
-  branchesEndpoint = 'https://gneeferserver.herokuapp.com/api/branch/';
-  loginEndpoint = 'https://gneeferserver.herokuapp.com/api/auth/signin';
-  reportsEndpoint = 'https://gneeferserver.herokuapp.com/api/report/';
-  invoiceEndpoint = 'https://gneeferserver.herokuapp.com/api/invoice/';
+  itemEndpoint = 'https://dewmin-gneeferserver.herokuapp.com/api/item/';
+  stocksEndpoint = 'https://dewmin-gneeferserver.herokuapp.com/api/stock/';
+  branchesEndpoint = 'https://dewmin-gneeferserver.herokuapp.com/api/branch/';
+  loginEndpoint = 'https://dewmin-gneeferserver.herokuapp.com/api/auth/signin';
+  reportsEndpoint = 'https://dewmin-gneeferserver.herokuapp.com/api/report/';
+  invoiceEndpoint = 'https://dewmin-gneeferserver.herokuapp.com/api/invoice/';
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json'})
