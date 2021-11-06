@@ -11,19 +11,14 @@
   <ion-button expand="block" (click)="printPage()">Print Page</ion-button>
 
   <div id="PrintInvoice">
-  <table cellpadding="0" cellspacing="0" style="width: 100%;line-height: inherit;text-align: left;">
+  <table cellpadding="0" cellspacing="0" style="width: 100%">
 
     <tr *ngFor="let i of rowsBarcode">
       <td>
-        <ngx-barcode [bc-value]="barcodeValue" [bc-display-value]="true" [bc-width] ="0.75" [bc-font-size]="10" [bc-height] = "100"></ngx-barcode>
+        <ngx-barcode [bc-value]="barcodeValue" [bc-display-value]="true" [bc-width] ="1.35" [bc-font-size]="10" [bc-height] = "55" [bc-margin-top]="40" ></ngx-barcode>
       </td>
-
       <td>
-        <ngx-barcode [bc-value]="barcodeValue" [bc-display-value]="true" [bc-width] ="0.75" [bc-font-size]="10" [bc-height] = "100"></ngx-barcode>
-      </td>
-
-      <td>
-        <ngx-barcode [bc-value]="barcodeValue" [bc-display-value]="true" [bc-width] ="0.75" [bc-font-size]="10" [bc-height] = "100"></ngx-barcode>
+        <ngx-barcode [bc-value]="barcodeValue" [bc-display-value]="true" [bc-width] ="1.35" [bc-font-size]="10" [bc-height] = "55" [bc-margin-left]="100" [bc-margin-top]="40"></ngx-barcode>
       </td>
     </tr>
     
