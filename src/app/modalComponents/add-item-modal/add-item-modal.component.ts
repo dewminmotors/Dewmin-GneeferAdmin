@@ -55,7 +55,7 @@ export class AddItemModalComponent implements OnInit {
     name:['',[Validators.required,Validators.maxLength(100)]],
     catName:['',[Validators.required,Validators.maxLength(100)]],
     brandName : ['',[Validators.required,Validators.maxLength(100)]],
-    tag: ['',[Validators.required,Validators.maxLength(100)]],
+    tag: ['',[Validators.maxLength(100)]],
     cost:['',[Validators.required,Validators.maxLength(100)]],
     price:['',[Validators.required,Validators.maxLength(100)]],
     discount:['',[Validators.maxLength(100)]],
