@@ -15,7 +15,7 @@ export class BarcodePrinterComponent implements OnInit {
   ) { }
 
   barcodeValue = "EMPTY VALUE"
-  rowsBarcode = [1]
+  rowsBarcode = [1,2,3,4]
 
   ngOnInit() {
     this.barcodeValue = this.apiCalls.selectedItem.barcodeId
