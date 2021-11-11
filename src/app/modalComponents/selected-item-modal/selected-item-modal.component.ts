@@ -117,7 +117,7 @@ export class SelectedItemModalComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.barcodeValue = this.apiCalls.selectedItem.itemId
+    this.barcodeValue = this.apiCalls.selectedItem.barcodeId
   }
 
   async closeBTN(){
