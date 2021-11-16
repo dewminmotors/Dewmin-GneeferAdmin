@@ -19,7 +19,6 @@ export class BarcodePrinterComponent implements OnInit {
 
   ngOnInit() {
     this.barcodeValue = this.apiCalls.selectedItem.barcodeId
-    console.log(this.apiCalls.selectedItem)
   }
 
   async closeBTN(){

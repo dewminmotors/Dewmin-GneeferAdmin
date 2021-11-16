@@ -14,11 +14,13 @@
   <table cellpadding="0" cellspacing="0" style="width: 100%">
 
     <tr *ngFor="let i of rowsBarcode">
-      <td>
-        <ngx-barcode [bc-value]="barcodeValue" [bc-display-value]="true" [bc-width] ="1.35" [bc-font-size]="10" [bc-height] = "55" [bc-margin-top]="40" ></ngx-barcode>
+      <td style="padding-top: 30px;">
+        <ion-text style="font: 10px monospace; margin-left: 45px; " text-anchor="middle" x="189" y="122">Rs. {{apiCalls.selectedItem.price}}</ion-text>
+        <ngx-barcode [bc-value]="barcodeValue" [bc-display-value]="true" [bc-width] ="1.35" [bc-font-size]="10" [bc-height] = "55" [bc-margin-top]="-0.5" ></ngx-barcode>
       </td>
-      <td>
-        <ngx-barcode [bc-value]="barcodeValue" [bc-display-value]="true" [bc-width] ="1.35" [bc-font-size]="10" [bc-height] = "55" [bc-margin-left]="100" [bc-margin-top]="40"></ngx-barcode>
+      <td style="padding-top: 30px;">
+        <ion-text style="font: 10px monospace; margin-left: 140px; " text-anchor="middle" x="189" y="122">Rs. {{apiCalls.selectedItem.price}}</ion-text>
+        <ngx-barcode [bc-value]="barcodeValue" [bc-display-value]="true" [bc-width] ="1.35" [bc-font-size]="10" [bc-height] = "55" [bc-margin-left]="100" [bc-margin-top]="-0.5"></ngx-barcode>
       </td>
     </tr>
     
